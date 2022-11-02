@@ -153,8 +153,20 @@ img {
 
 /* Hero */
 .hero {
-  background-color: var(--footer-bgc);
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
+  background-color: var(--footer-bgc);
+
+  background-image: linear-gradient(
+  to right,  
+  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/hero-bg-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+
   }
 
 .hero-title {
@@ -278,6 +290,8 @@ img {
 .team .background {
   /* margin-right: 30px; */
   background-color: var(--primary-bgc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team .background:last-child {
@@ -394,6 +408,7 @@ img {
 .button:active {
   color: var(--primary-bgc);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Flex projects */
@@ -407,8 +422,13 @@ img {
 .element {
   /* flex-basis: calc((100%-var(--indent)*(var(--items)-1))/var(--items)); */
   /* background-color: teal; */
+
 }
 
+.element:hover,
+.element:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .project {
   text-decoration: none;
