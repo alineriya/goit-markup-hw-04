@@ -535,6 +535,10 @@ img {
   gap: var(--indent);
 }
 
+.element {
+  width: 370px;
+}
+
 
 .project {
   display: block;
@@ -553,7 +557,6 @@ img {
 }
 
 .project .title {
-  /* padding: 20px 24px 4px; */
   margin-bottom: 4px;
 
   color: var(--title-text-color);
@@ -563,7 +566,6 @@ img {
 }  
 
 .project .text{
-  /* padding: 0 24px 20px; */
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;  
